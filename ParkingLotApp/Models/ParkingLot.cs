@@ -1,4 +1,6 @@
 ﻿using ParkingLotApp.Interfaces;
+using ParkingLotApp.Models.ParkingSpots;
+using ParkingLotApp.Models.ParkingStrategy;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,7 +55,7 @@ namespace ParkingLotApp.Models
             {
                 for (int i = 0; i < n; i++)
                 {
-                    level.AddParkingSpot(new BikeParkingSpot());
+                    level.AddParkingSpot(new LargeParkingSpot());
                 }
             }
         }
@@ -64,7 +66,7 @@ namespace ParkingLotApp.Models
             {
                 for (int i = 0; i < n; i++)
                 {
-                    level.AddParkingSpot(new BikeParkingSpot());
+                    level.AddParkingSpot(new BusParkingSpot());
                 }
             }
         }
